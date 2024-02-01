@@ -1,0 +1,185 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  position: relative;
+}
+
+h1{
+  font-weight:500;
+  font-size: 45px;
+  line-height: 55px;
+}
+
+h2{
+  font-weight:500;
+  font-size: 35px;
+  line-height: 45px;
+}
+
+h4{
+  font-weight:400;
+  font-size: 40px;
+  line-height: 35px;
+}
+
+p{
+  font-weight:400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.navbar{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar .container{
+  padding: 1rem 6%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar .logo{
+  height: 40px;
+  overflow: hidden;
+}
+
+.navbar .logo a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.navbar .logo a strong{
+  font-family: 'Jost', sans-serif ;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -5px;
+}
+
+.navbar ul{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul a{
+  font-size: 22px;
+  font-weight: 400;
+  color: #ccc;
+  text-transform: capitalize;
+}
+
+.navbar ul a:hover{
+  color: #fff;
+}
+
+.header{
+  background-image: url(./images/p01b0h5y.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+
+.header .box{
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translate(0%,-50%);
+  max-width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.header .box h1{
+  color: #fff;
+}
+
+.header .box h2{
+  color: #fff;
+}
+
+.header .box p{
+  color: #fff;
+}
+.header .btns{
+  display: flex;
+  gap: 1rem;
+
+}
+
+.header .box .btn{
+  margin-top: 1rem;
+  font-size: 14px;
+  padding: 10px 30px;
+  background-color: #fff;
+  font-weight: 500;
+  color: #000;
+  width: fit-content;
+  text-transform: capitalize;
+}
+
+.header .box .btn:hover{
+  background-color: #eee;
+  color: #444;
+}
+
+section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section .container{
+  padding: 1rem 6%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .container .box{
+  width: 50%;
+  min-width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section .container .box img{
+  width: 50px;
+  height: fit-content;
+
+}
+
+section .container .about-image{
+  width: 50%;
+  min-width: 300px;
+  overflow: hidden;
+}
