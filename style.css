@@ -40,6 +40,127 @@ p{
 
 .navbar{
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
+
+.navbar .container{
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.navbar .logo{
+  height: 40px;
+  overflow: hidden;
+}
+.navbar .logo a{
+  display: flex;
+  justify-content: center;
+  font-family: 'Jost', sans-serif ;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -5px;
+}
+
+#bars{
+  display: none;
+}
+.navbar .div-bars{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.div-bars .btn-bars{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 16px;
+  color: #eee;
+  cursor: pointer;
+}
+.btn-close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 16px;
+  color: #eee;
+  cursor: pointer;
+}
+.navbar .navigation{
+  position: fixed;
+  top: 0;
+  right: -450px;
+  width: 100%;
+  max-width: 450px;
+  height: 100vh;
+  min-height: 500px;
+  background-color: #000;
+  z-index: 100;
+  transition: all 2s;
+}
+#bars:checked~ .navigation{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 450px;
+  height: 100vh;
+  min-height: 500px;
+  background-color: #000;
+  z-index: 100;
+}
+
+.navbar .navigation ul{
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.6rem;
+  z-index: 100;
+}
+
+.navbar .navigation li{
+  height: fit-content;
+}
+
+.navbar .navigation a{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* .navbar{
+  position: absolute;
   top:0;
   left:0;
   right: 0;
@@ -92,7 +213,9 @@ p{
 
 .navbar ul a:hover{
   color: #fff;
-}
+} */
+
+/* ------------ */
 
 /* .header{
   height: 100vh;
@@ -165,7 +288,7 @@ p{
 }
 
 
-.header .box .btn{
+.header .box .btn, #works .btn{
   margin-top: 1rem;
   font-size: 14px;
   padding: 10px 30px;
@@ -177,7 +300,7 @@ p{
   transition: 0.4s;
 }
 
-.header .box .btn:hover{
+.header .box .btn:hover, #works .btn:hover{
   background-color: transparent;
   color: white;
   border: 1px solid white;
@@ -220,8 +343,7 @@ section .container .box{
 
 .about .container .box ul li i{
   font-size: 16px;
-  color: #fff;
-  background-color: #000;
+  color: #000;
   padding: 5px;
   border-radius: 50%;
 }
@@ -234,14 +356,14 @@ section .container .box{
   padding: 2px 5px;
 }
 
-.about .container .box .signature{
+/* .about .container .box .signature{
   width: 80%;
   display: flex;
   gap: 1rem;
   text-align: center;
   border-top: 1px solid #000;
   padding-top: 1rem;
-}
+} */
 
 .about .container .box img{
   width: 80px;
@@ -333,7 +455,7 @@ section .heading{
   text-align: center;
 }
 
-.services .box{
+/* .services .box{
   max-width: 33.33%;
   min-width: 300px;
   padding: 1rem;
@@ -397,7 +519,7 @@ section .heading{
 
 .border-6{
   border-bottom: 0px solid #444;
-}
+} */
 
 .works ul{
   list-style: none;
@@ -462,6 +584,11 @@ section .heading{
 .grid-wrapper .big{
   grid-column: span 2;
   grid-row: span 2;
+}
+
+#works .btn{
+  margin: auto;
+  margin-top: 20px;
 }
 
 .contact ul{
@@ -846,5 +973,4 @@ footer::before {
   .contact .form-box{
     width: 100%;
   }
-
 }

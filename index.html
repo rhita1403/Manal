@@ -11,16 +11,23 @@
 <body>
   <div class="navbar">
     <div class="container">
+      <input type="checkbox" name="bars" id="bars" style="position: absolute;">
       <div class="logo">
-        <a href="#"><strong>MM</strong> Manal Moussawira</a>
+        <a href="#"><strong>MM</strong></a>
       </div>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#about" class="">About</a></li>
-        <li><a href="#services" class="">Services</a></li>
-        <li><a href="#works" class="">Works</a></li>
-        <li><a href="#contact" class="">Contact</a></li>
-      </ul>
+      <div class="div-bars">
+        <label for="bars" class="btn-bars"><i class="fa fa-bars"></i></label>
+      </div>
+      <div class="navigation">
+        <label for="bars" class="btn-close"><i class="fa fa-close"></i></label>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about" class="">About</a></li>
+          <!-- <li><a href="#services" class="">Services</a></li> -->
+          <li><a href="#works" class="">Works</a></li>
+          <li><a href="#contact" class="">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="header">
@@ -40,28 +47,33 @@
         </h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, ducimus. Molestiae, dolorum? Inventore repudiandae aliquid, vitae est veritatis a et totam veniam!
+          J'offre des services tels que ...
         </p>
         <ul>
           <li>
-            <i class="fa fa-check"></i>
+            <i class="fa-solid fa-camera"></i>
             <span>Over 5 years of experience</span>
           </li>
           <li>
-            <i class="fa fa-check"></i>
+            <i class="fa-solid fa-camera"></i>
             <span>Exceptional work quality</span>
           </li>
           <li>
-            <i class="fa fa-check"></i>
+            <i class="fa-solid fa-camera"></i>
+            <span>200+ successfully executed projects</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-camera"></i>
             <span>200+ successfully executed projects</span>
           </li>
         </ul>
-        <div class="signature">
+        <!-- <div class="signature">
           <img src="./images/real-signature.jpg" alt="">
           <div class="txt">
             <div class="name">Manal Moussawira</div>
             <div class="job">Founder JV</div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="about-image">
         <div class="image">
@@ -72,7 +84,7 @@
     </div>
   </section>
 
-  <section class="services bg-dark" id="services">
+  <!-- <section class="services bg-dark" id="services">
     <div class="heading">
       <h1>Services</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias?</p>
@@ -133,11 +145,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="works bg-dark bg-black" id="works">
     <div class="heading">
-      <h1>My Work</h1>
+      <h1>My recent works</h1>
     </div>
     <div class="container">
       <ul>
@@ -148,7 +160,6 @@
         <li>Fashion</li>
         <li>Product</li>
       </ul>
-
     </div>
     <div class="container">
       <div class="grid-wrapper">
@@ -167,20 +178,8 @@
         <div class="image wide">
           <img src="./images/ama17.jpg" alt="">
         </div>
-        <!-- <div class="image tall">
-          <img src="./images/ama17.jpg" alt="">
-        </div>
-        <div class="image big">
-          <img src="./images/ama17.jpg" alt="">
-        </div>
-        <div class="image tall">
-          <img src="./images/ama17.jpg" alt="">
-        </div>
-        <div class="image wide">
-          <img src="./images/ama17.jpg" alt="">
-        </div> -->
-        </div>
       </div>
+      <a href="#works" class="btn">See more</a>
     </div>
   </section>
 
@@ -198,7 +197,8 @@
             <span>photo@photographer.com</span>
           </li>
           <li>
-            <span>21 Street Photo, San Franciso, CA 9421, USA</span>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><span>Check out mon Instagram</span></a>
           </li>
         </ul>
       </div>
@@ -268,7 +268,7 @@
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
             <li><a href="#works">Works</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -278,13 +278,15 @@
           <ul>
             <li><i class="fa fa-phone"></i>+1 123 090 4044</li>
             <li><i class="fa fa-at"></i>photo@photographer.com</li>
-            <li>1 Street Photo, San Franciso, CA 9421, USA</li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
-  <div class="copyrights">
+  <!-- <div class="copyrights">
     <div class="box">
       <p>
         Copyright @ 2024 by <a href="#">RL.</a> All Rights reserved.
@@ -297,6 +299,6 @@
         <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>
