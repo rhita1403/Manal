@@ -38,128 +38,14 @@ p{
   line-height: 28px;
 }
 
+/* .container{
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+} */
+
 .navbar{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.container{
-  width: 100%;
-  max-width: 1350px;
-  margin: 0 auto;
-  padding: 1rem 1rem;
-}
-
-.navbar .container{
-  width: 100%;
-  max-width: 1350px;
-  margin: 0 auto;
-  padding: 1rem 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.navbar .logo{
-  height: 40px;
-  overflow: hidden;
-}
-.navbar .logo a{
-  display: flex;
-  justify-content: center;
-  font-family: 'Jost', sans-serif ;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -5px;
-}
-
-#bars{
-  display: none;
-}
-.navbar .div-bars{
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-.div-bars .btn-bars{
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font: 16px;
-  color: #eee;
-  cursor: pointer;
-}
-.btn-close{
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font: 16px;
-  color: #eee;
-  cursor: pointer;
-}
-.navbar .navigation{
-  position: fixed;
-  top: 0;
-  right: -450px;
-  width: 100%;
-  max-width: 450px;
-  height: 100vh;
-  min-height: 500px;
-  background-color: #000;
-  z-index: 100;
-  transition: all 2s;
-}
-#bars:checked~ .navigation{
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  max-width: 450px;
-  height: 100vh;
-  min-height: 500px;
-  background-color: #000;
-  z-index: 100;
-}
-
-.navbar .navigation ul{
-  width: 100%;
-  height: 100vh;
-  min-height: 500px;
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.6rem;
-  z-index: 100;
-}
-
-.navbar .navigation li{
-  height: fit-content;
-}
-
-.navbar .navigation a{
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  text-transform: capitalize;
-  color: #fff;
-  margin-bottom: 0.5rem;
-}
-
-/* .navbar{
   position: absolute;
   top:0;
   left:0;
@@ -196,7 +82,9 @@ p{
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
+  display: flex;
+  width: 50px;
 }
 
 .navbar ul{
@@ -213,9 +101,9 @@ p{
 
 .navbar ul a:hover{
   color: #fff;
-} */
+}
 
-/* ------------ */
+
 
 /* .header{
   height: 100vh;
@@ -392,7 +280,7 @@ section .container .box{
 .about .about-image .image{
   width: 50%;
   height: 80%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .about .about-image .image::after{
@@ -495,33 +383,8 @@ section .heading{
   font-size: 18px;
 }
 
-.border-1{
-  border-right: 1px solid #444;
-  border-bottom: 1px solid #444;
-}
 
-.border-2{
-  border-right: 1px solid #444;
-  border-bottom: 1px solid #444;
-}
-
-.border-3{
-  border-bottom: 1px solid #444;
-}
-
-.border-4{
-  border-right: 1px solid #444;
-}
-
-.border-5{
-  border-right: 1px solid #444;
-}
-
-.border-6{
-  border-bottom: 0px solid #444;
-} */
-
-.works ul{
+/* .works ul{
   list-style: none;
   display: flex;
   justify-content: flex-start;
@@ -544,7 +407,7 @@ section .heading{
 .works ul li.active, .works ul li:hover{
   color: #fff;
   border-bottom: 1px solid #fff;
-}
+} */
 
 .works .grid-wrapper{
   width: 100%;
