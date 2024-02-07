@@ -42,7 +42,7 @@ p{
 
 
 .navbar{
-  position: fixed;
+  /* position: fixed; */
   top:0;
   left:0;
   right: 0;
@@ -137,26 +137,26 @@ p{
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, minmax(250px,1fr));
-  grid-auto-rows: 500px;
-  grid-auto-flow: dense;
+  /* grid-auto-rows: 500px;
+  grid-auto-flow: dense; */
 }
 
-.grid-wrapper img{
+.grid-wrapper a img{
   max-width: 100%;
-  height: auto;
+  /* height: 100%; */
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 }
 
-.grid-wrapper .image{
+.grid-wrapper a{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.grid-wrapper .image img{
+.grid-wrapper a.img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -229,4 +229,54 @@ footer {
 .main-footer .box ul li i{
   color: #eee;
   font-size: 20px;
+}
+
+
+
+@media only screen and (max-width:450px) {
+  section, footer, header{
+    width: 100%;
+    overflow: hidden;
+  }
+  .navbar ul a{
+    font-size: 16px;
+  }
+  .navbar ul {
+    gap: 10px;
+  }
+  .box{
+    width: 100%;
+    min-width: 95%;
+  }
+  .works ul{
+    gap: 8px;
+  }
+  .works ul li{
+    font-size: 14px;
+  }
+  .works .grid-wrapper{
+    grid-template-columns: minmax(250px, 1fr);
+  }
+  .works .grid-wrapper a{
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  /* .newsletter .form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .newsletter .form input{
+    min-width: 200px;
+  }
+  .newsletter .form .btn{
+    min-width: 120px;
+    font-size: 14px;
+  }
+
+  .contact .form-box{
+    width: 100%;
+  } */
 }
