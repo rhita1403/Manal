@@ -254,8 +254,8 @@ footer {
   .works ul li{
     font-size: 14px;
   }
-  .works .grid-wrapper{
-    grid-template-columns: minmax(250px, 1fr);
+  .grid-wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
   }
   .works .grid-wrapper a{
     grid-column: span 1;
