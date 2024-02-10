@@ -13,7 +13,13 @@ html{
 body{
   position: relative;
   background-color: #000;
+}
 
+section .container{
+  padding: 1rem 6%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 h1{
